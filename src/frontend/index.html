@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recruitment Assistant</title>
+</head>
+<body>
+  <h1>Recruitment Assistant</h1>
+  <p>Simple frontend for submitting recruitment assistant requests.</p>
+
+  <button onclick="runDemo()">Run Demo Recommendation</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    async function runDemo() {
+      const payload = {
+        role: "Frontend Engineer",
+        required_skills: ["React", "TypeScript", "GraphQL"],
+        candidates: [
+          {
+            name: "Candidate A",
+            skills: ["React", "TypeScript", "Node.js"],
+            experience_years: 6
+          },
+          {
+            name: "Candidate B",
+            skills: ["Java", "Spring", "SQL"],
+            experience_years: 8
+          },
+          {
+            name: "Candidate C",
+            skills: ["React", "GraphQL", "TypeScript"],
+            experience_years: 4
+          }
+        ]
+      };
+
+      const response = await fetch("http://localhost:8000/recommend", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await response.json();
+      document.getElementById("output").textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>
