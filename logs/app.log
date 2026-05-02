@@ -1,3 +1,9 @@
 2026-05-02 01:27:27,526 - src.backend.main - INFO - Recruitment Assistant application started
 2026-05-02 01:50:42,940 - src.backend.main - INFO - Recruitment Assistant application started
 2026-05-02 01:50:51,715 - src.backend.main - INFO - Health check requested
+2026-05-02 01:52:05,947 - src.backend.main - INFO - Recruitment Assistant application started
+2026-05-02 01:52:19,586 - src.backend.main - INFO - Application Crew execution started for role: Frontend Engineer
+2026-05-02 01:52:19,587 - src.backend.main - INFO - Application Crew execution completed. Recommendations generated: 3
+2026-05-02 02:01:10,281 - src.backend.main - INFO - Recruitment Assistant application started
+2026-05-02 02:01:26,783 - src.backend.main - INFO - Application Crew execution started for role: Frontend Engineer
+2026-05-02 02:01:26,783 - src.backend.main - INFO - Application Crew execution completed. Recommendations generated: 3
